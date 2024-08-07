@@ -23,6 +23,7 @@ FROM gcr.io/distroless/static-debian12:latest AS go-dist
 WORKDIR /
 
 COPY --from=go-build /docker-go-bin /docker-go-bin
+COPY --from=root images /images
 
 EXPOSE 80
 

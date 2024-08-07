@@ -12,6 +12,8 @@ func Start(port uint16) error {
 
 	router.NoRoute(notFound())
 
+	router.Static("/images", "/images")
+
 	router.GET("/events", getEvents())
 	router.POST("/events", filterEvents())
 	router.GET("/profile", getProfile())

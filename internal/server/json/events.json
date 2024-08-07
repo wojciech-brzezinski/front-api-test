@@ -6,10 +6,10 @@
         "location": "Conference room",
         "locationType": "office",
         "participants": [
-            { "name": "Wojtek", "avatar": "avatar1.jpg" },
-            { "name": "Marek", "avatar": "avatar2.jpg" },
-            { "name": "Jagoda", "avatar": "avatar3.jpg" },
-            { "name": "Weronika", "avatar": "avatar4.jpg" }
+            { "name": "Wojtek", "avatar": "/images/avatar1.jpg" },
+            { "name": "Marek", "avatar": "/images/avatar2.jpg" },
+            { "name": "Jagoda", "avatar": "/images/avatar3.jpg" },
+            { "name": "Weronika", "avatar": "/images/avatar4.jpg" }
         ]
     },
     {
@@ -19,8 +19,8 @@
         "location": "Conference room",
         "locationType": "office",
         "participants": [
-            { "name": "Angelika", "avatar": "avatar5.jpg" },
-            { "name": "Chris", "avatar": "avatar6.jpg" }
+            { "name": "Angelika", "avatar": "/images/avatar5.jpg" },
+            { "name": "Chris", "avatar": "/images/avatar6.jpg" }
         ]
     },
     {
@@ -30,7 +30,7 @@
         "location": "Dluga street, Karmazyn Pub",
         "locationType": "outside",
         "participants": [
-            { "name": "Wojtek", "avatar": "avatar1.jpg" }
+            { "name": "Wojtek", "avatar": "/images/avatar1.jpg" }
         ]
     },
     {
@@ -40,9 +40,9 @@
         "location": "https://link.com",
         "locationType": "remote",
         "participants": [
-            { "name": "Wojtek", "avatar": "avatar1.jpg" },
-            { "name": "Jagoda", "avatar": "avatar3.jpg" },
-            { "name": "Weronika", "avatar": "avatar4.jpg" }
+            { "name": "Wojtek", "avatar": "/images/avatar1.jpg" },
+            { "name": "Jagoda", "avatar": "/images/avatar3.jpg" },
+            { "name": "Weronika", "avatar": "/images/avatar4.jpg" }
         ]
     },
     {

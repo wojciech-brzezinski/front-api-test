@@ -11,6 +11,6 @@ var jsonEvents string
 
 func getEvents() gin.HandlerFunc {
 	return func(context *gin.Context) {
-		context.Data(http.StatusOK, gin.MIMEJSON, []byte(jsonEvents))
+		context.JSON(http.StatusOK, events(nil))
 	}
 }

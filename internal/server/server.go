@@ -8,6 +8,7 @@ import (
 func Start(port uint16) error {
 	router := gin.Default()
 
+	router.Use(httpHost())
 	router.Use(delay())
 
 	router.NoRoute(notFound())

@@ -13,6 +13,6 @@ func filterEvents() gin.HandlerFunc {
 			return
 		}
 
-		context.JSON(http.StatusOK, events(filter))
+		context.JSON(http.StatusOK, events(filter, context))
 	}
 }

@@ -2,6 +2,7 @@ package server
 
 import (
 	"encoding/json"
+	"github.com/gin-gonic/gin"
 	"time"
 )
 
@@ -25,9 +26,11 @@ type Event struct {
 	Participants []EventParticipant `json:"participants"`
 }
 
-var _EVENTS []Event
+func events(filter *EventFilter, context *gin.Context) []Event {
+	var _EVENTS []Event
 
-func events(filter *EventFilter) []Event {
+	_ = json.Unmarshal([]byte(jsonEvents), &_EVENTS)
+
 	items := make([]Event, len(_EVENTS))
 	index := 0
 
@@ -50,9 +53,15 @@ func events(filter *EventFilter) []Event {
 		index++
 	}
 
-	return items
-}
+	host := context.MustGet("HttpHost").(string)
 
-func init() {
-	_ = json.Unmarshal([]byte(jsonEvents), &_EVENTS)
+	for indexA, event := range items {
+		for indexB, participant := range event.Participants {
+			if participant.Avatar != "" {
+				items[indexA].Participants[indexB].Avatar = host + participant.Avatar
+			}
+		}
+	}
+
+	return items
 }

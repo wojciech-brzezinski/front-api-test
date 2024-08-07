@@ -11,6 +11,6 @@ var jsonEvents string
 
 func getEvents() gin.HandlerFunc {
 	return func(context *gin.Context) {
-		context.JSON(http.StatusOK, events(nil))
+		context.JSON(http.StatusOK, events(nil, context))
 	}
 }

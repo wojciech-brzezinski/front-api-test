@@ -44,7 +44,9 @@ func filterEvents() gin.HandlerFunc {
 	return func(context *gin.Context) {
 		filter := &Filter{}
 
-		_ = context.BindJSON(filter)
+		if err := context.BindJSON(filter); nil != err {
+			return
+		}
 
 		items := make([]Event, len(events))
 		index := 0
@@ -66,6 +68,6 @@ func filterEvents() gin.HandlerFunc {
 			index++
 		}
 
-		context.JSON(http.StatusOK, items[0:index+1])
+		context.JSON(http.StatusOK, items[0:index])
 	}
 }

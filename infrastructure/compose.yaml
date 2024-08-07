@@ -1,0 +1,16 @@
+name: front-api-test
+
+services:
+    project-dist:
+        build:
+            context: .
+            additional_contexts: [ root=.. ]
+            target: go-dist
+        env_file:
+            - { path: ../.env }
+            - { path: ../.env.local, required: false }
+        ports:
+            - ${DOCKER_PORT_SERVER_DIST:-}:80
+
+volumes:
+    go-modules: ~

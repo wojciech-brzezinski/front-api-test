@@ -8,6 +8,8 @@ import (
 func Start(port uint16) error {
 	router := gin.Default()
 
+	router.Use(delay())
+
 	router.NoRoute(notFound())
 
 	router.GET("/events", getEvents())

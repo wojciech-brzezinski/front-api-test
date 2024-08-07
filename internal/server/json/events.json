@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Product discussion",
+        "timeStart": "2024-08-07T10:00:00+02:00",
+        "timeEnd": "2024-08-07T11:30:00+02:00",
+        "location": "Conference room",
+        "locationType": "office",
+        "participants": [
+            { "name": "Wojtek", "avatar": "avatar1.jpg" },
+            { "name": "Marek", "avatar": "avatar2.jpg" },
+            { "name": "Jagoda", "avatar": "avatar3.jpg" },
+            { "name": "Weronika", "avatar": "avatar4.jpg" }
+        ]
+    },
+    {
+        "name": "Feedback about our beauty brand",
+        "timeStart": "2024-08-07T12:00:00+02:00",
+        "timeEnd": "2024-08-07T13:00:00+02:00",
+        "location": "Conference room",
+        "locationType": "office",
+        "participants": [
+            { "name": "Angelika", "avatar": "avatar5.jpg" },
+            { "name": "Chris", "avatar": "avatar6.jpg" }
+        ]
+    },
+    {
+        "name": "Meeting with clients",
+        "timeStart": "2024-08-07T15:00:00+02:00",
+        "timeEnd": "2024-08-07T17:30:00+02:00",
+        "location": "Dluga street, Karmazyn Pub",
+        "locationType": "outside",
+        "participants": [
+            { "name": "Wojtek", "avatar": "avatar1.jpg" }
+        ]
+    },
+    {
+        "name": "Design team meeting with Instagram creators",
+        "timeStart": "2024-08-08T10:00:00+02:00",
+        "timeEnd": "2024-08-08T11:30:00+02:00",
+        "location": "https://link.com",
+        "locationType": "remote",
+        "participants": [
+            { "name": "Wojtek", "avatar": "avatar1.jpg" },
+            { "name": "Jagoda", "avatar": "avatar3.jpg" },
+            { "name": "Weronika", "avatar": "avatar4.jpg" }
+        ]
+    },
+    {
+        "name": "Pool party!!!",
+        "timeStart": "2024-08-11T10:00:00+02:00",
+        "timeEnd": "2024-08-11T13:00:00+02:00",
+        "location": "Pool",
+        "locationType": "office",
+        "participants": "Everyone"
+    },
+    {
+        "name": "Regular monthly office meeting",
+        "timeStart": "2024-08-14T10:00:00+02:00",
+        "timeEnd": "2024-08-14T11:30:00+02:00",
+        "location": "Floor 0",
+        "locationType": "office",
+        "participants": "Everyone"
+    },
+    {
+        "name": "Regular monthly office meeting",
+        "timeStart": "2024-09-14T10:00:00+02:00",
+        "timeEnd": "2024-09-14T11:30:00+02:00",
+        "location": "Floor 0",
+        "locationType": "office",
+        "participants": "Everyone"
+    }
+]

@@ -1,0 +1,18 @@
+{
+    "avatar": "/url",
+    "firstName": "Marek",
+    "lastName": "Kowalski",
+    "nickName": "Marek",
+    "role": "Boss (admin)",
+    "team": "Management",
+    "earnings": {
+        "current": 1034,
+        "goal": 1234,
+        "currency": "USD"
+    },
+    "achievements": [
+        { "key": "On time", "value": 25 },
+        { "key": "Thank You", "value": 123 },
+        { "key": "Best smile", "value": 2 }
+    ]
+}
